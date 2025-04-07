@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Strings Only</title>
+</head>
+<body>
+    <h1>JavaScript Task 2: Print Strings</h1>
+    <p>Hello Bahaa and Khalaf</p>
+    <script>
+        let inputArray = [1, 4, 6, "ahmed", "omar"];
+
+        let outputArray = [];
+
+        for (let i = 0; i < inputArray.length; i++) {
+            if (typeof inputArray[i] === "string") {
+                outputArray.push(inputArray[i]);
+            }
+        }
+
+        console.log(outputArray.join(","));
+    </script>
+</body>
+</html>
