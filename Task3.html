@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Task3</h1>
+<p>Hello Bahaa , Hello Khalaf</p>
+
+<script>
+function Showdetails(...args) {
+    let name, age, status;
+    for (let arg of args) {
+        if (typeof arg === "string") {
+            name = arg;
+        } else if (typeof arg === "number") {
+            age = arg;
+        } else if (typeof arg === "boolean") {
+            status = arg;
+        }
+    }
+    if (status) {
+        console.log(`Hello ${name}, your age is ${age} and you are available`);
+    } else {
+        console.log(`Hello ${name}, your age is ${age} and you are not available`);
+    }
+}
+Showdetails("mohamed", 18, true);
+Showdetails(20, "mohamed", true);
+Showdetails(false, 20, "mohamed");
+</script>
+
+</body>
+</html>
